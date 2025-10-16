@@ -29,7 +29,7 @@ public class ScreenSaver : Form
         ControlTimer.Tick += (s, e) => //capturar o evento, é uma função anònima/arrow (não tem nome)
         {
             // ****** Mova suas formas geométricas aqui ******
-            r.Move(ClientSize.Height, ClientSize.Height);
+            r.Move(ClientSize.Width, ClientSize.Height);
             // ***********************************************
 
             Invalidate(); //manda todos se movimentarem e depois invalida, faz com que o sitema precise redesenhar
@@ -44,7 +44,7 @@ public class ScreenSaver : Form
     {
         base.OnLoad(e);
         // ****** Instancie suas formas geométricas aqui ******
-        r = new MyRectangle(0, 500, Color.DarkRed, 200, 100);
+        r = new MyRectangle(220, 500, Color.DeepPink, 200, 100);
         // ****************************************************
     }
 
